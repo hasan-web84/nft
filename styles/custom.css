@@ -1,0 +1,515 @@
+/* ------ fonts ------ */
+
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/_Woff2/KalamehWeb-Thin.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/_Woff2/KalamehWeb-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/_Woff2/KalamehWeb-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/_Woff2/KalamehWeb-Black.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/_Woff/KalamehWeb\(FaNum\)-Thin.woff) format("woff");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/_Woff/KalamehWeb\(FaNum\)-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/_Woff/KalamehWeb\(FaNum\)-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/_Woff/KalamehWeb\(FaNum\)-Black.woff) format("woff");
+}
+@font-face {
+  font-family: "Gilory-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/_Woff/Gilroy-Bold.woff) format("woff");
+}
+
+/* ------ root ------ */
+
+:root {
+  --body-background: #07101d;
+  --orange-text: #ff3c00;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kalameh";
+  background-color: var(--body-background);
+  overflow-x: hidden;
+}
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+/* ------ components ------ */
+
+.text_orange {
+  color: var(--orange-text);
+}
+.bg_orange {
+  background-color: var(--orange-text);
+}
+
+.bg_main_gradient {
+  background: linear-gradient(to right, #7011ad, #bc0505, #fc630f);
+}
+.card_gradient_1 {
+  background-image: linear-gradient(315deg, #fc280c, #07101d);
+}
+.card_gradient_2 {
+  background-image: linear-gradient(315deg, #00d1ff, #07101d);
+}
+.card_gradient_3 {
+  background-image: linear-gradient(315deg, #760aff, #07101d);
+}
+.card_gradient_4 {
+  background-image: linear-gradient(315deg, #fe007a, #07101d);
+}
+.card_gradient_5 {
+  background-image: linear-gradient(315deg, #ffbf1c, #07101d);
+}
+.card_gradient_6 {
+  background-image: linear-gradient(315deg, #fc280c, #07101d);
+}
+.card_gradient_1::after {
+  border-top: 1px solid #fc280c;
+}
+.card_gradient_2::after {
+  border-top: 1px solid #00d1ff;
+}
+.card_gradient_3::after {
+  border-top: 1px solid #760aff;
+}
+.card_gradient_4::after {
+  border-top: 1px solid #fe007a;
+}
+.card_gradient_5::after {
+  border-top: 1px solid #ffbf1c;
+}
+.card_gradient_6::after {
+  border-top: 1px solid #fc280c;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.p_custom {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.w_60 {
+  width: 60%;
+}
+.w_40 {
+  width: 40%;
+}
+.bg_inherit {
+  background-color: inherit;
+}
+.fs_3rem {
+  font-size: 3rem;
+}
+.bg_dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.ability_green_card {
+  border: 1px solid rgba(0, 255, 26, 1);
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 255, 26, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+}
+.dark_blue {
+  background-color: rgba(7, 16, 29, 1);
+}
+.ability_blue_card {
+  border: 1px solid rgba(83, 0, 255, 1);
+  background: linear-gradient(
+    106.88deg,
+    rgba(74, 1, 224, 0.1) 19.63%,
+    rgba(255, 255, 255, 0.1) 98.74%
+  );
+}
+.ability_red_card {
+  border: 1px solid rgba(255, 31, 0, 1);
+  background: linear-gradient(
+    106.88deg,
+    rgba(255, 19, 4, 0.1) 19.63%,
+    rgba(255, 255, 255, 0.1) 98.74%
+  );
+}
+
+/* ------ customs ------ */
+
+/* ------ Header ------ */
+
+header .nav-item .active {
+  color: var(--orange-text) !important;
+  position: relative;
+}
+.ellipse-1 {
+  background-image: radial-gradient(#3d0d5861 38%, #070f1c00 0%);
+  width: 800px;
+  height: 800px;
+  right: -12rem;
+  top: -22rem;
+  filter: blur(80px);
+}
+.header_img_shape1 {
+  top: 6rem;
+  right: 6rem;
+}
+.header_img_shape2 {
+  bottom: 3rem;
+  left: 3rem;
+}
+
+.header_img_artists {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
+  bottom: 4rem;
+  right: 6rem;
+}
+.section_header_icon {
+  width: 65px;
+  height: 65px;
+}
+
+/* ------ Main ------ */
+
+/* ------ wallet ------ */
+
+.bg_card_wallet {
+  position: relative;
+  padding: 1px;
+  height: 188px;
+}
+.bg_card_wallet::after {
+  content: "";
+  position: absolute;
+  background-color: #07101d;
+  width: 43.3px;
+  height: 22.17px;
+  right: -14px;
+  bottom: -3px;
+  transform: rotate(-45deg);
+}
+.card_wallet {
+  background-color: #161e2a;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.card_img_wallet {
+  height: 90px;
+}
+
+/* ------ Hot-bids ------ */
+
+.hot_bids_card_heart_icon {
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  left: 15px;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+}
+.hot_bids_timer {
+  font-family: "Gilory-Bold";
+  font-size: 20px;
+  top: 15px;
+  height: 50px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+.ellipse-2 {
+  width: 952px;
+  height: 991px;
+  background: radial-gradient(rgba(8, 164, 117, 0.1), rgba(7, 15, 28, 0));
+  top: 15rem;
+  left: -15rem;
+  filter: blur(20px);
+}
+.ability {
+  margin-top: 6rem !important;
+}
+.ability_row {
+  row-gap: 4rem;
+}
+.ability_card_caption {
+  font-size: 18px;
+}
+.ability_card_icon {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(30px);
+  top: -50px;
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(30px);
+}
+
+/* ------ Trends ------ */
+
+.trends_card {
+  padding-top: 6rem !important;
+}
+.trends_card_img {
+  transform: translateY(80px);
+}
+.trends_card_img img {
+  width: 90%;
+}
+.ellipse-3 {
+  background: radial-gradient(rgba(189, 9, 95, 0.13), rgba(7, 15, 28, 0));
+  width: 1600px;
+  height: 1600px;
+  filter: blur(30px);
+  top: -15rem;
+  right: -30rem;
+  z-index: -1;
+}
+
+/* ------ Top-Creators ------ */
+
+.creators_card {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.creators_card_title {
+  font-family: "Gilory-bold";
+}
+
+/* ------ Newsletter ------ */
+
+.newsletter_box {
+  background: linear-gradient(
+    to right,
+    rgba(165, 14, 134, 1),
+    rgba(193, 11, 112, 1),
+    rgba(232, 57, 71, 1),
+    rgba(223, 51, 13, 1),
+    rgba(197, 82, 18, 1),
+    rgba(211, 117, 6, 1)
+  );
+}
+.newsletter_box::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/newsletter-waves1.png);
+  background-repeat: no-repeat;
+  bottom: -27rem;
+  right: -32rem;
+  width: 982.71px;
+  height: 726.26px;
+}
+.newsletter_box::before {
+  content: "";
+  background-image: url(../images/newsletter-waves2.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0rem;
+  left: 0rem;
+  width: 982.71px;
+  height: 726.26px;
+}
+.newsletter_box > div {
+  box-shadow: 0 0 100px rgba(255, 255, 255, 0.7);
+}
+.newsletter_input_box {
+  max-width: 500px;
+}
+.newsletter_input_box input,
+.newsletter_input_box button {
+  padding: 12px;
+}
+
+/* ------ Footer ------ */
+
+footer {
+  background-color: #091028;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+.footer_icon {
+  width: 52px;
+  height: 52px;
+}
+.footer_title {
+  font-family: "Gilory-Bold";
+  font-size: 40px;
+}
+.footer_caption {
+  max-width: 270px;
+}
+.ellipse-4 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    62.37% 62.37% at 50% 50%,
+    rgba(8, 52, 164, 0.2) 21.7%,
+    rgba(7, 15, 28, 0) 100%
+  );
+  filter: blur(40px);
+  top: -3rem;
+  right: -7rem;
+}
+
+/* ------ media ------ */
+
+@media screen and (max-width: 991.98px) {
+  .bg_dark_md {
+    background-color: var(--bs-secondary-color);
+  }
+  .fs_2rem {
+    font-size: 2.5rem;
+  }
+  .header_img_artists {
+    bottom: 4rem;
+    right: 2rem;
+  }
+
+  .w_40 {
+    width: auto;
+  }
+  header::after {
+    width: 500px;
+    height: 500px;
+    top: -150px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header_img_shape1 {
+    transform: scale(0.8);
+  }
+  .header_img_shape2 {
+    transform: scale(0.8);
+  }
+  .section_header_icon {
+    width: 55px;
+    height: 55px;
+  }
+  .section_header_icon svg {
+    width: 35px;
+    height: 35px;
+  }
+  .arrow_left {
+    width: 28px;
+  }
+  .see_all_btn {
+    font-size: 14px;
+  }
+  .fs-3 {
+    font-size: calc(1rem + 0.6vw) !important;
+  }
+  .fs-4 {
+    font-size: 1.2rem !important;
+  }
+  .fs-5 {
+    font-size: 1.1rem !important;
+  }
+  .fs-6 {
+    font-size: 1rem !important;
+  }
+  .wallet_box_image {
+    width: 70px;
+  }
+  .ability_card_icon {
+    padding: 0.5rem !important;
+  }
+  .ability_card_icon svg {
+    width: 40px;
+  }
+  .footer_title {
+    font-size: 30px;
+  }
+  .trends_box_icon {
+    width: 14px;
+  }
+  .trends_box_span {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .fw_lg_medium {
+    font-weight: 500 !important;
+  }
+  .fs_12px {
+    font-size: 12px !important;
+  }
+  .fs_16px {
+    font-size: 14px !important;
+  }
+  .fs_27px {
+    font-size: 27px;
+  }
+  .header_img_artists {
+    bottom: 2rem;
+    right: 2rem;
+  }
+  .header_img_shape1 {
+    right: 3rem;
+    top: 3rem;
+  }
+  .header_img_shape2 {
+    left: 1rem;
+    bottom: 2rem;
+  }
+  .newsletter_input_box input {
+    width: 70%;
+  }
+  .newsletter_input_box button {
+    width: 30%;
+  }
+}
